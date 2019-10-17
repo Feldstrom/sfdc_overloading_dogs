@@ -1,0 +1,18 @@
+//The signature of a method includes ONLY its:
+//Name
+//Parm list data type and sequence
+
+public class DogX {
+	public void play(string name, integer age) {
+        System.debug('Called method 1');
+    }
+
+	public void play(integer age, string name) {
+        System.debug('Called method 2');
+    }
+
+}   
+
+DogX dog1 = new DogX();
+dog1.play('toby', 10);
+dog1.play(10, 'fido');
